@@ -8,11 +8,11 @@
   <title>We Offer Guaranteed Growth and Guaranteed ROI For Your Business</title>
   <meta name="description" content="Web Site Audit and HVAC Lead Gen Case Studies">
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/google-traffic.css">
   <script src="https://kit.fontawesome.com/d77e0dc8bb.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -52,173 +52,191 @@
 </head>
 
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-    }
-    html {
-        scroll-behavior: smooth;
-    }
-    #reviewID{
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 70px;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    }
-    .reviewRow{
-        width: 90%;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-        padding: 7px;
-    }
-    .reviewimg{
-        width: 350px;
-        height: auto;
-        margin: 30px auto;
-        display: block;
-        background-color: #fff;
-        padding: 20px;
-    }
-    .reviewRowItemRow{
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 5px;
-    }
-    .reviewItem{
-        width: 100%;
-        height: 240px !important;
-        float: left;
-        display: block;
-        border: 1px solid #77777726;
-        border-radius: 7px;
-        margin: 7px 2px;
-        transition: all .5s;
-        padding: 17px;
-        overflow: hidden;
-        background-color: #fff;
-    }
-    .reviewItem:hover{
-        box-shadow: 1px 1px 4px 0px #dad0d0;
-        cursor: pointer;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #reviewID {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 70px;
+
+  }
+
+  .reviewRow {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 7px;
+  }
+
+  .reviewimg {
+    width: 350px;
+    height: auto;
+    margin: 30px auto;
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .reviewRowItemRow {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+  }
+
+  .reviewItem {
+    width: 100%;
+    height: 240px !important;
+    float: left;
+    display: block;
+    border: 1px solid #77777726;
+    border-radius: 7px;
+    margin: 7px 2px;
+    transition: all .5s;
+    padding: 17px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .reviewItem:hover {
+    box-shadow: 1px 1px 4px 0px #dad0d0;
+    cursor: pointer;
+  }
 
 
-    .opps{
-        display: grid;
-        grid-template-columns: 1fr 6fr;
-    }
+  .opps {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+  }
 
 
-    .reviewItemSub_left{
-        width: 100%;
-        height: auto;
-        display: block;
-        float: left;
-        padding: 3px;
-    }
-    .reviewItemSub_right{
-        float: left;
-        width: 100%;
-        display: block;
-        padding: 10px 15px;
-    }
-    .reviewItemSub_left img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-    .reviewItemSub_right h2{
-        text-transform: uppercase;
-        color: #333;
-        font-size: 22px !important;
-    }
-    .reviewStart{
-        list-style: none;
-        margin: 0;
-    }
-    .reviewStart ul{
-        margin: 0;
-    }
-    .reviewStart li{
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-    }
-    .reviewStart li p{
-       color: gold;
-       font-size: 20px;
-    }
-    .reviewText{
-        width: 100%;
-        height: 98px;
-        display: block;
-        overflow: auto;
-        color: rgb(129, 127, 127);
-        padding-right: 5px;
+  .reviewItemSub_left {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+    padding: 3px;
+  }
 
-    }
+  .reviewItemSub_right {
+    float: left;
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+  }
 
-    @media only screen and (max-width: 1024px){
-        .reviewRowItemRow {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
+  .reviewItemSub_left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
-    @media only screen and (max-width: 768px){
+  .reviewItemSub_right h2 {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 22px !important;
+  }
 
-        .reviewItemSub_right h2 {
-            font-size: 18px !important;
-        }
-        .reviewItemSub_left img {
-            width: 40px;
-            height: 40px;
-        }
-        .reviewStart li p{
-            margin: 0;
-            padding: 0;
-        }
-    }
-    @media only screen and (max-width: 768px){
-        .reviewItem{
-            padding: 6px !important
-        }
-        .reviewItemSub_right{
-            padding: 10px 5px;
-        }
-        .reviewItemSub_right h2 {
-            font-size: 15px !important;
-        }
-        .reviewStart li p{
-            font-size: 15px;
-        }
-}
+  .reviewStart {
+    list-style: none;
+    margin: 0;
+  }
 
-@media only screen and (max-width: 425px){
+  .reviewStart ul {
+    margin: 0;
+  }
+
+  .reviewStart li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reviewStart li p {
+    color: gold;
+    font-size: 20px;
+  }
+
+  .reviewText {
+    width: 100%;
+    height: 98px;
+    display: block;
+    overflow: auto;
+    color: rgb(129, 127, 127);
+    padding-right: 5px;
+
+  }
+
+  @media only screen and (max-width: 1024px) {
     .reviewRowItemRow {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
-    .reviewText{
-        height: 120px !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .reviewItemSub_right h2 {
+      font-size: 18px !important;
     }
-}
 
+    .reviewItemSub_left img {
+      width: 40px;
+      height: 40px;
+    }
 
-     
+    .reviewStart li p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .reviewItem {
+      padding: 6px !important
+    }
+
+    .reviewItemSub_right {
+      padding: 10px 5px;
+    }
+
+    .reviewItemSub_right h2 {
+      font-size: 15px !important;
+    }
+
+    .reviewStart li p {
+      font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .reviewRowItemRow {
+      grid-template-columns: 1fr;
+    }
+
+    .reviewText {
+      height: 120px !important;
+    }
+  }
 </style>
 
 
 <body>
   <!-- Header -->
   <header class="header">
-    <a href="/"><img src="./assets/surge-logo.png" class="header-logo" height="50px" alt="Lead Hero"></a>
+    <a href="/" class="logo"><img src="./assets/surge-logo.png" class="header-logo" alt="Lead Hero"></a>
   </header>
   <!-- Body -->
   <div class="page">
@@ -229,32 +247,36 @@
       <br /><br />
 
 
-      <h1 class="site-title">ROI Guarantee: <b class="blue">We Guarantee To Add $300K In New Revenue When You Work With Us For At Least 12 Months </b></h1>
+      <h1 class="site-title">ROI Guarantee: <b class="blue">We Guarantee To Add $300K In New Revenue When You Work With
+          Us For At Least 12 Months </b></h1>
 
 
 
       <br /><br />
 
 
-      
 
 
-<button style="font-size: 2.5rem;" type="button" class="btn btn-success btn-lg btn-block">Click Now To Grow Your Business</button>
+
+      <button type="button" class="btn btn-success btn-lg btn-block btn-text">Click Now To Grow Your Business</button>
 
 
-      
- <br /><br /><br />
+
+      <br /><br /><br />
 
 
       <h1 class="site-title">We Focus On A <b class="blue"><i>Result-Driven Approach</i></b></h1>
 
 
 
-<br />
-      
+      <br />
 
-<h4 style="text-align: left";>Our #1 goal is to grow your business! With over 20 years of experience our team of expert digital marketers can provide your local company
- with all of the necessary strategies to get your company new customers as fast as possible!</h4>
+
+      <h4 style="text-align: left" ;>Our #1 goal is to grow your business! With over 20 years of experience our team of
+        expert digital marketers can provide your local company
+        with all of the necessary strategies to get your company new customers as fast as possible!</h4>
+
+      <br />
 
 <br />
       
@@ -262,83 +284,84 @@
       
 
 
-<br /><br />
 
-<h1 class="site-title">Check Out <b class="blue">Our Clients Results</b></h1>
+      <br /><br />
 
-<br /><br />
+      <h1 class="site-title">Check Out <b class="blue">Our Clients Results</b></h1>
+
+      <br /><br />
 
 
 
 
       <div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <div><img src="./assets/results1.png"></div>
-    </div>
-    <div class="col-sm-4">
-      <div><img src="./assets/results1-before.png"></div>
-    </div>
-    <div class="col-sm-4">
-      <div> <img src="./assets/results1-after.png"></div>
-    </div>
-  </div>
-</div>
-      
- 
-
- 
-
-  
-    
-<br /><br />
+        <div class="row">
+          <div class="col-sm-4">
+            <div><img src="./assets/results1.png"></div>
+          </div>
+          <div class="col-sm-4">
+            <div><img src="./assets/results1-before.png"></div>
+          </div>
+          <div class="col-sm-4">
+            <div> <img src="./assets/results1-after.png"></div>
+          </div>
+        </div>
+      </div>
 
 
-  <div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <div><img src="./assets/results2a.png"></div>
-    </div>
-    <div class="col-sm-4">
-      <div><img src="./assets/results2b.png"></div>
-    </div>
-    <div class="col-sm-4">
-      <div> <img src="./assets/results2-after.png"></div>
-    </div>
-  </div>
-</div>
 
-      
 
-     
+
+
 
       <br /><br />
 
-      
-      
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div><img src="./assets/results2a.png"></div>
+          </div>
+          <div class="col-sm-4">
+            <div><img src="./assets/results2b.png"></div>
+          </div>
+          <div class="col-sm-4">
+            <div> <img src="./assets/results2-after.png"></div>
+          </div>
+        </div>
+      </div>
 
 
 
- <br />
 
 
-      
-
-
-<button style="font-size: 2.5rem;" type="button" class="btn btn-success btn-lg btn-block">Click Now To Grow Your Business</button>
-
-
-      
- <br /><br /><br />
+      <br /><br />
 
 
 
 
-      
+
+
+      <br />
+
+
+
+
+
+      <button type="button" class="btn btn-success btn-lg btn-block btn-text">Click Now To Grow Your Business</button>
+
+
+
+      <br /><br /><br />
+
+
+
+
+
     </div>
   </div>
 
-  
+
   <!-- Footer -->
 
   <footer class="footer">
@@ -348,9 +371,9 @@
       </div>
     </div>
     <div>
-      
+
       <div class="pb-1">
-      Providing Guaranteed Growth and Guaranteed ROI For Your Business
+        Providing Guaranteed Growth and Guaranteed ROI For Your Business
       </div>
     </div>
   </footer>
